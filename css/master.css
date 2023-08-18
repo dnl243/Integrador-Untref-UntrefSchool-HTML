@@ -20,22 +20,22 @@ h3{
 }
 
 /* === Aplicando CSS al HEADER === */
-#encabezado{
+.encabezado{
   display: grid;
   grid-template-columns: 1.5fr .5fr;
   background-color: #1f8a70;
   border: 1px solid #fc7300;
 }
-#tituloPrincipal{
+.tituloPrincipal{
   font-family: 'Poppins', sans-serif;
   margin: 2vw;
   text-align: center;
 }
-#logo{
+.logo{
   justify-self: center;
   align-self: center;
 }
-#barraNav{
+.barraNav{
   display: flex;
   flex-wrap: wrap;
   background-color: #1f8a70bb;
@@ -61,16 +61,16 @@ ul li a{
   color: #181823;
 }
 /* === Aplicando CSS al MAIN=== */
-#infoPrincipal{
+.infoPrincipal{
   font-family: 'Belanosima', sans-serif;
   background-color: #fc730033;
   padding-bottom: 20px;
 }
-#quienesSomos, #porQueElegirnos, #propuestaEducativa, #ultimasNoticias {
+.quienesSomos, .porQueElegirnos, .propuestaEducativa, .ultimasNoticias {
   padding: 1.5em;
   padding-bottom: 0;
 }
-#noticia{
+.noticia{
   padding-top: 10px;
 }
 ol li{
@@ -79,7 +79,7 @@ ol li{
 
 
 /* ===Aplicando CSS al FOOTER=== */
-#piePagina{
+.piePagina{
   background-color: #1f8a7088;
   display: grid;
   grid-template-columns: 1fr;
@@ -89,10 +89,10 @@ ol li{
   color: #00425a;
   padding-top: 20px;
 }
-#redesSociales{
+.redesSociales{
   font-size: 20px;
 }
-#redesSociales-ol{
+.redesSociales-ol{
   display: inline-flex;
 }
 ol li a{
@@ -107,17 +107,17 @@ margin-right: 5px;
 h5{
   font-size: 20px;
 }
-#nombreFooter{
+.nombreFooter{
   font-size: 20px;
 }
 
 /* ===Aplicando CSS responsive resolucion mayor/igual 320px=== */
 
 @media screen and (min-width: 320px) {
-  #tituloPrincipal{
+  .tituloPrincipal{
     font-size: 15px;
   }
-  #logo{
+  .logo{
     width: 150px;
     justify-self: center;
     align-self: center;
@@ -127,31 +127,31 @@ h5{
 /* ===Aplicando CSS responsive resolucion mayor/igual 768px=== */
 
 @media screen and (min-width: 768px) {
-  #tituloPrincipal{
+  .tituloPrincipal{
     font-size: 22px;
   }
-  #infoPrincipal{
+  .infoPrincipal{
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-family: 'Belanosima', sans-serif;
     background-color: #fc730033;
     padding-bottom: 20px;
   }
-  #quienesSomos {
+  .quienesSomos {
     order: 1;
   }
-  #porQueElegirnos {
+  .porQueElegirnos {
     order: 3;
   }
-  #propuestaEducativa {
+  .propuestaEducativa {
     order: 2;
   }
-  #ultimasNoticias {
+  .ultimasNoticias {
     order: 4;
   }
 
   /* ===Aplicando CSS al FOOTER=== */
-  #piePagina{
+  .piePagina{
     grid-template-columns: repeat(3,1fr);
     align-items: center;
   }
@@ -159,7 +159,7 @@ h5{
 
 /* ===Aplicando CSS al formulario=== */
 
-#container {
+.container {
   width: 100vw;
   height: 45vw;
   min-height: 450px;
